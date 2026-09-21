@@ -1,0 +1,19 @@
+Test Case 1:
+Question: What is machine learning?
+Expected: The agent should provide a clear and accurate explanation of machine learning.
+
+Test Case 2:
+Question: Explain artificial intelligence in exactly 2 sentences.
+Expected: The agent should explain AI in exactly two sentences.
+
+Test Case 3:
+Question: Give me 5 benefits of Python.
+Expected: The agent should provide exactly five relevant benefits.
+
+Test Case 4:
+Question: Who is the CEO of XYZ Corporation?
+Expected: The agent should not invent information if it does not know the answer.
+
+Test Case 5:
+Question: Explain cloud computing like I am 10 years old.
+Expected: The agent should provide a simple explanation suitable for a beginner.
