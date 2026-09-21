@@ -16,7 +16,21 @@ from langchain_openai import ChatOpenAI
 
 load_dotenv()
 
+# ============================================================
+# OPENAI API KEY
+# ============================================================
 
+if "OPENAI_API_KEY" in st.secrets:
+    OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
+else:
+    OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+
+if not OPENAI_API_KEY:
+    st.error(
+        "OPENAI_API_KEY is not configured. "
+        "Please add it in Streamlit Cloud → Settings → Secrets."
+    )
+    st.stop()
 # ============================================================
 # STREAMLIT PAGE CONFIGURATION
 # ============================================================
